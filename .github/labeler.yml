@@ -1,0 +1,19 @@
+# see https://github.com/actions/labeler
+documentation:
+- any: ["docs/**"]
+#  all: ["!docs/changes.md"]
+
+CI:
+- any: [".github/**", ".github/workflows/**"]
+
+# docker:
+# - any:
+#   - "Dockerfile"
+#   - ".dockerignore"
+#   - "docker-compose.yml"
+#   - ".github/workflows/docker.yml"
+
+tests:
+- any:
+  - "python/pti/rest/tests/**"
+  - "python/pti/fastapi/tests/**"
