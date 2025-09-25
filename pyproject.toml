@@ -19,6 +19,11 @@ license = {text = "Apache 2.0" }
 dynamic = ["readme"]
 
 [project.optional-dependencies]
+
+core = []
+
+db = ["sqlmodel"]
+
 # Dev dependencies.
 # - pytest: for running tests
 # - black: Autoformatting
@@ -30,10 +35,6 @@ dev = [
   "mypy", 
   "coverage", 
 ]
-
-core = []
-
-db = ["sqlmodel"]
 
 # project documentation generation
 doc = [
@@ -49,8 +50,8 @@ doc = [
 # all extras
 all = [
   "pti-fastapi-utils[core]", 
-  "pti-fastapi-utils[doc]", 
   "pti-fastapi-utils[db]",
+  "pti-fastapi-utils[doc]", 
   #"pti-fastapi-utils[nlp]", 
   "pti-fastapi-utils[dev]", 
 ]
