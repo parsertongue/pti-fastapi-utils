@@ -33,6 +33,8 @@ dev = [
 
 core = []
 
+db = ["sqlmodel"]
+
 # project documentation generation
 doc = [
   "mkdocs==1.2.3",
@@ -48,6 +50,7 @@ doc = [
 all = [
   "pti-fastapi-utils[core]", 
   "pti-fastapi-utils[doc]", 
+  "pti-fastapi-utils[db]",
   #"pti-fastapi-utils[nlp]", 
   "pti-fastapi-utils[dev]", 
 ]
