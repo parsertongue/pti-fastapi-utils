@@ -31,8 +31,6 @@ dev = [
   "coverage", 
 ]
 
-pg = ["sqlmodel", "SQLAlchemy", "psycopg2"]
-
 core = []
 
 # project documentation generation
@@ -49,7 +47,6 @@ doc = [
 # all extras
 all = [
   "pti-fastapi-utils[core]", 
-  "pti-fastapi-utils[pg]", 
   "pti-fastapi-utils[doc]", 
   #"pti-fastapi-utils[nlp]", 
   "pti-fastapi-utils[dev]", 
