@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pti.fastapi import env
 from pti.fastapi.rest import config
-from sqlmodel import SQLModel, Session, create_engine, select
+#from sqlmodel import SQLModel, Session, create_engine, select
 from fastapi import (
     HTTPException,
     Security,
